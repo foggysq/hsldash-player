@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html ng-app="DashPlayer" lang="en" class="ng-scope">
+
+
+	<head>
+		<meta charset="utf-8"/>
+		<title>
+			HSL/MPEG-DASH Player
+		</title>
+		<style type="text/css">
+			/* Page style / Стили страницы */
+			#plisting {
+				width: 720px;
+
+				margin: auto;
+			}
+			/* Input style / Стиль поля ввода */
+			#vsrc2 {
+				width: 500px;
+				height: 25px;
+
+				font-size: 12pt;
+			}
+		</style>
+		<!-- Player style / Стили плеера -->
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+
+	<body>
+		<table id="plisting">
+			<tbody>
+				<tr>
+					<td>
+						<h1>HSL/MPEG-DASH Player</h1>
+					</td>
+				</tr>
+				<!-- For DEMO / Для демонстрации -->
+				<tr>
+					<td>
+						SRC 1: <input type="radio" name="source" onclick="playv()"><input type="hidden" id="vsrc0" value="https://bitmovin-a.akamaihd.net/content/playhouse-vr/mpds/105560.mpd"> https://bitmovin-a.akamaihd.net/content/playhouse-vr/mpds/105560.mpd
+					</td>
+				</tr>
+				<tr>
+					<td>
+						SRC 2: <input type="radio" name="source" onclick="playv()"><input type="hidden" id="vsrc1" value="https://bitmovin-a.akamaihd.net/content/playhouse-vr/m3u8s/105560.m3u8"> https://bitmovin-a.akamaihd.net/content/playhouse-vr/m3u8s/105560.m3u8
+					</td>
+				</tr>
+				<tr>
+					<td>
+						SRC 3: <input type="radio" name="source" onclick="playv()">
+						<input type="text" id="vsrc2" value="https://video-dev.github.io/streams/x36xhzz/x36xhzz.m3u8">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="" onclick="window.refresh()">Reload page</a> to change your choice.
+					</td>
+				</tr>
+				<tr>
+					<td>
+				
+
+
+
+
+						<!-- Player / Плеер -->
+						<div id="dipl" class="di_player">
+							<!-- Errors window / Окно ошибок -->
+							<div class="di_alert">To launch video player Javascript is needed.<br \>Для проигрывания видео необходим Javascript.</div>
+							<!-- Video / Видео -->
+							<video></video>
+							<!-- Control panel / Панель управления -->
+							<div class="di_panel">
+								<!-- Play/Pause -->
+								<div class="di_ppause">
+									<a class="di_play"></a>
+								</div>
+								<!-- Current time / Текущее время -->
+								<div class="di_ctime">00:00:00</div>
+								<!-- Progress bar / Временная шкала -->
+								<div class="di_progress" onclick="settime(event)">
+									<div class="di_pb" style="width: 1%;"></div>
+								</div>
+								<!-- Duration / Длительность видео -->
+								<div class="di_ft">00:00:00</div>
+							</div>
+						</div>
+
+
+
+
+
+
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+	<!-- Libraries -->
+	<script src="https://cdn.dashjs.org/latest/dash.all.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+	<script src="ess.3.2.js"></script>
+	<!-- Player -->
+	<script type="text/javascript" src="hlsmpd.js"></script>
+	<script type="text/javascript" src="scriptn.js"></script>
+</html>

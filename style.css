@@ -1,0 +1,133 @@
+
+
+
+/* HSL/MPEG-DASH Player style */
+/* Стили самого HSL/MPEG-DASH плеера */
+
+/* Main div / Основной див контейнер */
+.di_player {
+	position: relative;
+
+	width: 640px;
+}
+	/* Errors div / Див для ошибок */
+	.di_player .di_alert {
+		position: absolute;
+
+		width: 620px;
+		top: 20px;
+
+		padding: 10px;
+
+		background: #000;
+		color: #FFF;
+	}
+	.hidd {
+		display: none;
+	}
+	/* Video element / Video элемент */
+	.di_player video {
+		width: 640px;
+		height: 340px;
+
+		margin: 0px;
+
+		background: #000;
+		
+		cursor: pointer;
+	}
+	/* Control panel / Панель управления  */
+	.di_panel {
+		position: relative;
+
+		width:100%;
+		height: 40px;
+
+		margin-top: -25px;
+		
+		background: #000;
+		color: #FFF;
+	}
+		/* Play/Pause button / Кнопка управления проигрыванием */
+		.di_ppause a {
+			display: inline-block;
+			cursor: pointer;
+			
+			width: 30px;
+			height: 30px;
+
+			margin: 5px 0 0 5px;
+			border-radius: 5px;
+
+			text-align: center;
+			text-decoration: none;
+			font-size: 1.2em;
+			line-height: 35px;
+			
+			background-color: #555;
+		}
+		.di_ppause a:hover {
+			background-color: rgba(177,177,177,.3);
+		}
+		/* Button variety / Варианты отображения кнопки */
+		.di_play {
+			background-image: url(ppause.png);
+			background-repeat: no-repeat;
+			background-position: left;
+			background-size: 60px;
+		}
+		.di_pause {
+			background-image: url(ppause.png);
+			background-repeat: no-repeat;
+			background-position: right;
+			background-size: 60px;
+		}
+		.di_wait {
+			background-image: url(wait.gif);
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: 25px;
+		}
+
+	/* Current time / Текущее время */
+	.di_ctime {
+		position: absolute;
+		top: 12px;
+		left: 7%;
+
+		width: 10%;
+
+		padding-right: 5px;
+
+		text-align: right;
+	}
+	/* Duration / Длительность видео*/
+	.di_ft {
+		position: absolute;
+		top: 12px;
+		left: 90%;
+
+		width: 10%;
+	}
+	/* Progress bar / Временная шкала */
+	.di_progress {
+	    background-color: #777;
+	    border-radius: 20px 20px 20px 20px;
+	    overflow: hidden;
+	    position: absolute;
+	    left: 18%;
+	    top: 15px;
+	    width: 70%;
+	    -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,0.2) inset;
+	    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.2) inset;
+	}
+	/* Progress / Текущее состояние */
+	.di_pb {
+	    height: 10px;
+	    background-color: #fff;
+	    border-radius: 20px 20px 20px 20px;
+	}
+
+
+
+
