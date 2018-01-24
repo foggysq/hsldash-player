@@ -2,6 +2,12 @@
 Online player for HSL and MPEG-DASH.
 
 # Quick Start for Users
+Download repository because DEMO can be changed.
+Attach video player styles:
+```
+<link rel="stylesheet" href="style.css">
+```
+
 Insert this code where player should be (e.g. id = 'dipl'):
 ```
 <!-- Player / Плеер -->
@@ -13,7 +19,7 @@ Insert this code where player should be (e.g. id = 'dipl'):
 			<a class="di_play"></a>
 		</div>
 		<div class="di_ctime">00:00:00</div>
-		<div class="di_progress" onclick="settime(event)">
+		<div class="di_progress">
 			<div class="di_pb" style="width: 1%;"></div>
 		</div>
 		<div class="di_ft">00:00:00</div>
@@ -28,9 +34,9 @@ And add this at the end of the body, like this:
 	<!-- Libraries -->
 	<script src="https://cdn.dashjs.org/latest/dash.all.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-	<script src="http://fous.name/player/ess.3.2.js"></script>
+	<script src="ess.3.2.js"></script>
 	<!-- Player -->
-	<script type="text/javascript" src="http://fous.name/player/hlsmpd.js"></script>
+	<script type="text/javascript" src="hlsmpd.js"></script>
 	<script type="text/javascript">
 		var url = 'https://video-dev.github.io/streams/x36xhzz/x36xhzz.m3u8';
 		var autoplay = false;
