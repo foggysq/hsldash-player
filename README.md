@@ -41,5 +41,5 @@ And add this at the end of the body, like this:
 
 For more information see: [DEMO](http://fous.name/player/), index.html and hlsmpd.js in Git.
 
-Создан на основе:
+Using:
 [hls.js](https://github.com/video-dev/hls.js/) и [dash.js](https://github.com/Dash-Industry-Forum/dash.js)
