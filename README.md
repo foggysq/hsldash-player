@@ -1,8 +1,9 @@
 ## HSL/MPEG-DASH Player
 Online player for HSL and MPEG-DASH.
+Download repository because DEMO can be changed.
+Then place it under a web server (do not try to run from the file system) to run DEMO.
 
 # Quick Start for Users
-Download repository because DEMO can be changed.
 Attach video player styles:
 ```
 <link rel="stylesheet" href="style.css">
